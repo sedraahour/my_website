@@ -1,0 +1,43 @@
+/* تصميم البنية الاساسية للموقع من نوع خط ولون الخلفية واللون الامامي */
+body {
+  font-family: "Cairo", "Tajawal" , sans-serif;
+  background-color: #f4f6fb;
+  color: #1f2937;
+}
+
+/* شريط التنقل والتذييل باللون الأساسي */
+.navbar-main { background-color: #1e3a8a; }
+.site-footer { background-color: #0f1f4d; color: #cbd5e1; }
+.site-footer a { color: #fcd34d; }
+
+/* لون خلفية الواجهة الترحيبية والحدود */
+.hero { background-color: #1e3a8a; color: #ffffff; border-bottom: 8px solid #f59e0b; }
+
+/*  حد جانبي باللون الثانوي */
+.sec { border-right: 6px solid #f59e0b; padding-right: 10px; margin-bottom: 15px; font-weight: bold; }
+
+/* تصميم شكل صندوق أسماء المشاركين */
+.box { background-color: #ffffff; border: 1px solid #d5ddec; border-right: 6px solid #f59e0b; padding: 15px; }
+
+/* السلايدر: الشرائح مخفية في البداية   */
+.slide { display: none; }
+.slide-cap { background-color: #1e3a8a; }
+
+/* التصنيفات السريعة */
+.cats { display: flex; flex-wrap: wrap; gap: 10px; }
+.cats a { font-size: 14pt; padding: 10px 20px; }
+
+/* معرض الصور في صفحة الفعالية: بثلاثة أعمدة متساوية */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.gallery img { width: 100%; }
+
+/* صور الفريق */
+.team img { width: 100px; height: 100px; }
+
+/* الوضع الداكن: يُفعَّل بالزر في شريط التنقل */
+body.dark { background-color: #121a2e; color: #e5e7eb; }
+body.dark .card { background-color: #1f2a44; color: #e5e7eb; }
+body.dark .box { background-color: #1f2a44; color: #e5e7eb; }
+body.dark .modal-content { background-color: #1f2a44; color: #e5e7eb; }
+body.dark .form-control { background-color: #2a3654; color: #ffffff; }
+body.dark .form-select { background-color: #2a3654; color: #ffffff; }
