@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>اتصل بنا - دليل فعاليات الجامعة</title>
+<!-- Bootstrap 5 (نسخة RTL) عبر CDN: يوفر Grid والمكوّنات Navbar, Card, Button, Form, Alert, Badge, Modal -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<!-- الخط Cairo (والاحتياطي Tajawal ثم sans-serif في styles.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+<!-- تنسيق الموقع الخاص (بعد Bootstrap ليتغلب عليه) -->
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+<body id="top" class="d-flex flex-column min-vh-100">
+
+<!-- ===== Header: الشعار واسم الدليل + شريط التنقل Navbar ===== -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-main">
+<div class="container">
+<a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" width="36" height="36" alt="شعار الدليل" /> دليل فعاليات الجامعة</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav me-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+<li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+<li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعالية</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+</ul>
+<input type="button" id="darkBtn" class="btn btn-sm btn-outline-light" value="وضع داكن / فاتح" />
+</div>
+</div>
+</nav>
+</header>
+
+<!-- ===== Main: محتوى الصفحة ===== -->
+<main class="flex-grow-1">
+
+<!-- القسم 1: عنوان الصفحة -->
+<div class="container mt-4">
+<h1 class="sec h3">اتصل بنا</h1>
+<p>للاستفسار أو لتقديم فعالية جديدة، أرسل لنا رسالة عبر النموذج التالي.</p>
+</div>
+
+<!-- القسم 2: نموذج التواصل (Bootstrap Form) + التحقق في main.js + رسالة Bootstrap Alert -->
+<div class="container">
+<div class="row">
+<div class="col-md-7 mb-4">
+<div id="msg"></div>
+<form id="cform" action="">
+<div class="mb-3">
+<label for="name" class="form-label">الاسم</label>
+<input type="text" id="name" class="form-control" placeholder="اسمك الكامل" />
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">البريد الإلكتروني</label>
+<input type="text" id="email" class="form-control" dir="ltr" placeholder="name@example.com" />
+</div>
+<div class="mb-3">
+<label for="message" class="form-label">الرسالة</label>
+<textarea id="message" rows="5" class="form-control"></textarea>
+</div>
+<input type="submit" class="btn btn-primary" value="إرسال" />
+</form>
+</div>
+
+<!-- القسم 3: معلومات التواصل البديلة -->
+<div class="col-md-5">
+<div class="box">
+<h2 class="h4">معلومات بديلة</h2>
+<p>📧 البريد العام: info@university-events.edu.sy</p>
+<p>📞 <span dir="ltr">+9630981394212</span></p>
+<p class="mb-0"><a href="https://facebook.com" target="_blank">فيسبوك</a> · <a href="https://instagram.com" target="_blank">إنستغرام</a> · <a href="https://x.com" target="_blank">إكس</a></p>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- ===== Footer: معلومات التواصل وحقوق النشر وروابط السوشيال ===== -->
+<footer class="site-footer mt-5 py-4">
+<div class="container">
+<div class="row">
+<div class="col-md-5 mb-3">
+<h5>تواصل معنا</h5>
+<p class="mb-1">📧 info@university-events.edu.sy</p>
+<p class="mb-0">📞 <span dir="ltr">+9630981394212</span></p>
+</div>
+<div class="col-md-4 mb-3">
+<h5>تابعنا</h5>
+<a href="https://facebook.com" target="_blank">فيسبوك</a> · <a href="https://instagram.com" target="_blank">إنستغرام</a> · <a href="https://x.com" target="_blank">إكس</a>
+</div>
+<div class="col-md-3">
+<p class="mb-0">© 2026 دليل فعاليات الجامعة. جميع الحقوق محفوظة.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- زر العودة للأعلى (Bonus): رابط إلى أعلى الصفحة بدون JavaScript -->
+<a href="#top" class="btn btn-primary position-fixed bottom-0 start-0 m-3">↑</a>
+
+<!-- jQuery (النسخة نفسها في المقرر 1.10.2) ثم Bootstrap JS (للقائمة والنافذة المنبثقة) ثم كود الموقع -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
